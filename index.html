@@ -69,7 +69,7 @@ function downUp(){
     upBtn.classList.add("lowerUp");
 }
 document.addEventListener("scroll",function(){
-    if (screen.width < 1080){
+    if (window.innerWidth < 1080){
         if (window.scrollY>lastScroll) {
             hideNav();
             downUp();
