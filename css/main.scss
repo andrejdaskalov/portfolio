@@ -172,7 +172,9 @@ nav{
 .lowerUp{
     transform: translateY(2em);
 }
-
+.hidden{
+    opacity: 0;
+}
 .toUp{
     position: fixed;
     bottom: 3em;
