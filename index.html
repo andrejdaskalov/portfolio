@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="header">
+        <img class="item" src="res/profilePic.jpg" alt="profile Picture">
+        <p class="nameTag item">Andrej Daskalov</p>
+    </div>
+    <div class="pattern">
+        <!-- <img src="res/IO.svg" alt=""> -->
+        <div class="img"></div>
+        <div class="fade"></div>
+    </div>
+    <nav id="nav">
+        <span class="line" id="line"></span>
+        <ul>
+            
+            <li><a class="current" id="home" href="#">Home</a></li>
+            <li><a href="#" id="work">My work</a></li>
+            <li><a href="#" id="about">About</a></li>
+
+        </ul>
+    </nav>
+    <div class="hero">
+        <h1>Software and design that <span class="accent">works</span> for you.</h1>
+        <button class="hire">see for yourself</button>
+    </div>
+    
+    <footer></footer>
+    <button class="toUp" id="upBtn"><img src="res/arrow.svg" alt="scroll to top"></button>
+    <script>
+        
+        var home = document.getElementById("home");
+        var work = document.getElementById("work");
+        var home = document.getElementById("about");
+        var line = document.getElementById("line");
+        var upBtn=document.getElementById("upBtn");
+        var navBar = document.getElementById("nav");
+//////////////////up button listener////////////////////
+        upBtn.addEventListener("click",function(){
+            window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+            });
+        })
+
+////////////////hide and show navbar mobile /////////////////////
+var lastScroll=0;
+function showNav(){
+    console.log("show");
+    navBar.classList.remove("hideNav");
+}
+function hideNav(){
+    console.log("hide");
+    navBar.classList.add("hideNav");
+}
+function upUp(){
+    upBtn.classList.remove("lowerUp");
+}
+function downUp(){
+    upBtn.classList.add("lowerUp");
+}
+document.addEventListener("scroll",function(){
+    if (screen.width < 1080){
+        if (window.scrollY>lastScroll) {
+            hideNav();
+            downUp();
+        } else {
+            showNav();
+            upUp();
+        }
+        lastScroll=window.scrollY;
+    }
+});
+/////////NAV BUTTONS DESKTOP LINE ANIMATION EVENT LISTENERS////////////////////
+        line.classList.add("currentLine");
+        line.classList.add("lineToHome");
+
+        home.addEventListener("mouseover",function(event){
+            
+        })
+        
+        work.addEventListener("mouseover",function(event){
+            line.classList.remove("currentLine");
+            line.classList.add("lineToWork");
+        })
+        work.addEventListener("mouseout",function(event){
+            line.classList.remove("lineToWork");
+            line.classList.add("lineToHome");
+            line.classList.add("currentLine");
+        })
+        about.addEventListener("mouseover",function(event){
+            line.classList.remove("currentLine");
+            line.classList.add("lineToAbout");
+        })
+        about.addEventListener("mouseout",function(event){
+            line.classList.remove("lineToAbout");
+            line.classList.add("lineToHome");
+            line.classList.add("currentLine");
+        })
+
+////////////////////////////////
+
+    </script>
+</body>
+</html>
