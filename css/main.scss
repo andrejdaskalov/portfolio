@@ -111,15 +111,9 @@ nav{
             text-decoration: none;
             color: #FCFAF9;
             transition: color ease-in-out 0.5s;
-            &:hover{
-                color: #3066BE;
-            }
         }
         .current{
             color: #48E5C2;
-            &:hover{
-                color: #37c4a5;
-            }
         }
         li{
             list-style-type: none;
@@ -192,7 +186,7 @@ nav{
     img{
         width: 50%;
     }
-    
+
 }
 footer{
     display: block;

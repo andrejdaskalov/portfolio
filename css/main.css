@@ -138,16 +138,8 @@ nav ul a {
   transition: color ease-in-out 0.5s;
 }
 
-nav ul a:hover {
-  color: #3066BE;
-}
-
 nav ul .current {
   color: #48E5C2;
-}
-
-nav ul .current:hover {
-  color: #37c4a5;
 }
 
 nav ul li {
