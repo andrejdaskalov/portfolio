@@ -6,7 +6,6 @@ body{
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #FCFAF9;
     font-family: 'Roboto', sans-serif;
     //font-size: 10px;
     background: #FCFAF9;
@@ -33,7 +32,16 @@ body{
     }
   }
 
+h2{
+    font-weight: bolder;
+    font-size: 7em;
+    color: #48E5C2;
+    padding-left: 0.5em;
+    margin: 0;
+}
+
 .pattern{
+    background-color: #FCFAF9;
     width: 100%;
     position: absolute;
     margin-top: -5em;
@@ -92,7 +100,6 @@ nav{
     display: block;
     z-index: 999;
     background-color: #3066BE;
-    transition: all ease-in-out 0.5s;
     ul{
         position: absolute;
         padding: 0;
@@ -155,6 +162,70 @@ nav{
         }
     }
     
+}
+.content{
+    position: relative;
+    width: 100%;
+   height: 300vh;
+    .skills{
+        height: 100vh;
+        
+        background: url(../res/wave.svg);
+        background-color: #3066BE;
+        background-repeat: no-repeat;
+        background-size: 101%;
+        background-position: center top;
+
+        // display: block;
+        // position: relative;
+        // top: -2px;
+        // height: 500px;
+        // background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1222 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(252, 250, 249, 1)" d="M 0 0 C 313.5 0 313.5 110 627 110 L 627 110 L 627 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(252, 250, 249, 1)" d="M 626 110 C 929 110 929 35 1232 35 L 1232 35 L 1232 0 L 626 0 Z" stroke-width="0"></path> </svg>');
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-color: #3066BE;
+
+        // &::before{
+        //     position: absolute;
+        //     content: '';
+        //     background: url(../res/wave.svg);
+        //     transform: scaleX(-1) scaleY(-1);
+        //     background-size: cover;
+        //     margin-top: -10em;
+        //     width: 100%;
+        //     height: 100;
+        // }
+        h2{
+            margin:0; 
+        }
+        // .wave{
+        //     position: absolute;
+        //     //top: 1em;
+        //     height: 10em;
+        //     width: 100%;
+            
+            
+        //     &::before{
+        //         content: '';
+        //         position: absolute;
+        //         background: url(../res/wave.svg) no-repeat top;
+        //         background-size:cover;
+        //         width: 100%;
+        //         transform: scaleX(-1) scaleY(-1);
+        //         height: 10em;
+        //         z-index: 999;
+                
+        //     }
+            
+        // }
+        // .solid{
+        //     background-color: #3066BE;
+        //     //top: 10em;
+        //     position: absolute;
+        //    height: 100vh;
+        //     width: 100%;
+        // }
+    }
 }
 .hideNav{
     transform: translateY(3.3em);
@@ -233,6 +304,7 @@ footer{
         font-size: 0.75em;
         display: block;
         background: none;
+        mix-blend-mode: multiply;
         .line{
             display: block;
             position: absolute;
@@ -314,6 +386,16 @@ footer{
         left: 0;
         margin-left:0;
         width: auto;
+        }
+    }
+    .content{
+        .skills{
+            h2{
+                position: absolute;
+                top: 0.3em;
+                margin:0 0 0 2.14em;
+                padding: 0;
+            }
         }
     }
     .toUp{

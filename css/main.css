@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-html, body {
+html {
+  height: 100%;
+}
+
+body {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: #FCFAF9;
   font-family: 'Roboto', sans-serif;
   background: #FCFAF9;
   z-index: -999;
@@ -35,7 +38,16 @@ html, body {
   background: #37c4a5;
 }
 
+h2 {
+  font-weight: bolder;
+  font-size: 7em;
+  color: #48E5C2;
+  padding-left: 0.5em;
+  margin: 0;
+}
+
 .pattern {
+  background-color: #FCFAF9;
   width: 100%;
   position: absolute;
   margin-top: -5em;
@@ -104,8 +116,6 @@ nav {
   display: block;
   z-index: 999;
   background-color: #3066BE;
-  -webkit-transition: all ease-in-out 0.5s;
-  transition: all ease-in-out 0.5s;
 }
 
 nav ul {
@@ -186,6 +196,25 @@ nav ul li {
 
 .hero .hire:hover {
   background-position: right;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 300vh;
+}
+
+.content .skills {
+  height: 100vh;
+  background: url(../res/wave.svg);
+  background-color: #3066BE;
+  background-repeat: no-repeat;
+  background-size: 101%;
+  background-position: center top;
+}
+
+.content .skills h2 {
+  margin: 0;
 }
 
 .hideNav {
@@ -270,6 +299,7 @@ footer {
     font-size: 0.75em;
     display: block;
     background: none;
+    mix-blend-mode: multiply;
   }
   nav .line {
     display: block;
@@ -353,6 +383,12 @@ footer {
     left: 0;
     margin-left: 0;
     width: auto;
+  }
+  .content .skills h2 {
+    position: absolute;
+    top: 0.3em;
+    margin: 0 0 0 2.14em;
+    padding: 0;
   }
   .toUp {
     bottom: 2em;
