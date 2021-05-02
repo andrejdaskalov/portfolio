@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*:focus{
+    outline:2px dashed #3066BE;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
 html { height: 100%; scroll-snap-type: y mandatory; scroll-padding-top: 3em;}
 body{
     width: 100%;
@@ -353,8 +360,9 @@ footer{
                 text-decoration: none;
                 color: #5E5E5E;
                 transition: color ease-in-out 0.5s;
-                &:hover{
+                &:hover,&:focus{
                     color: #3066BE;
+                    
                 }
                 // &::after{
                 //     display: block;
@@ -369,8 +377,9 @@ footer{
             }
             .current{
                 color: #48E5C2;
-                &:hover{
+                &:hover,&:focus{
                     color: #37c4a5;
+                    outline:2px dashed #37c4a5;
                 }
             }
             li{

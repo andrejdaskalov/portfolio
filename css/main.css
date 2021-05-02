@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+*:focus {
+  outline: 2px dashed #3066BE;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   height: 100%;
   -ms-scroll-snap-type: y mandatory;
@@ -53,7 +62,7 @@ h2 {
   font-weight: bolder;
   font-size: 7em;
   color: #48E5C2;
-  padding-left: 0.5em;
+  padding: 0.5em;
   margin: 0;
 }
 
@@ -369,14 +378,15 @@ footer {
     -webkit-transition: color ease-in-out 0.5s;
     transition: color ease-in-out 0.5s;
   }
-  nav ul a:hover {
+  nav ul a:hover, nav ul a:focus {
     color: #3066BE;
   }
   nav ul .current {
     color: #48E5C2;
   }
-  nav ul .current:hover {
+  nav ul .current:hover, nav ul .current:focus {
     color: #37c4a5;
+    outline: 2px dashed #37c4a5;
   }
   nav ul li {
     list-style-type: none;
