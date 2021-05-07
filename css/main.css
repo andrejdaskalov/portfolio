@@ -231,7 +231,7 @@ nav ul li {
   background: url(../res/wave.svg);
   background-color: #3066BE;
   background-repeat: no-repeat;
-  background-size: 101%;
+  background-size: 103%;
   background-position: center top;
 }
 
@@ -288,6 +288,10 @@ footer {
 }
 
 @media only screen and (min-width: 1080px) {
+  h2 {
+    font-size: 7em;
+    padding: 2em;
+  }
   .pattern .img {
     margin-left: 30%;
     width: 70%;
@@ -408,9 +412,7 @@ footer {
     width: auto;
   }
   .content .skills h2 {
-    position: absolute;
-    top: 0.3em;
-    margin: 0 0 0 2.14em;
+    margin: 0 0 0 1.5em;
     padding: 0;
   }
   .toUp {
