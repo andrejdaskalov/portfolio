@@ -10,7 +10,7 @@
 }
 
 html {
-  height: 100%;
+  height: auto;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   scroll-padding-top: 3em;
@@ -24,11 +24,11 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #FCFAF9;
   z-index: -999;
-  position: absolute;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: scroll;
+  position: relative;
 }
 
 body .snap {
@@ -60,9 +60,9 @@ body .snap {
 
 h2 {
   font-weight: bolder;
-  font-size: 7em;
+  font-size: 5em;
   color: #48E5C2;
-  padding: 0.5em;
+  padding: 10px;
   margin: 0;
   max-width: 100%;
 }
@@ -281,9 +281,9 @@ footer {
   background-color: #3066BE;
   margin: 0;
   padding: 0;
-  position: absolute;
   width: 100%;
   background-repeat: repeat-x;
+  scroll-snap-align: end;
   background-image: url(../res/border_triangles.svg);
 }
 
