@@ -334,6 +334,7 @@ nav ul li {
 .content .skills .icon-container img {
   height: 150px;
   width: 150px;
+  margin: 2em 0;
 }
 
 .hideNav {
@@ -358,7 +359,7 @@ nav ul li {
   padding: 0;
   width: 4em;
   height: 4em;
-  background: #48E5C2;
+  background: #37c4a5;
   border: 0.5em solid #FCFAF9;
   border-radius: 190px;
   -webkit-box-sizing: content-box;
