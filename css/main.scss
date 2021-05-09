@@ -424,7 +424,7 @@ footer{
     }
     .content{
         .projects{
-
+            min-height: 110vh;
             h2{
                 margin:0 0 0 1.5em;
                 padding: 0;
@@ -432,13 +432,13 @@ footer{
             .cardContainer{
                 margin-top: 10%;
                 flex-direction: row;
-                height: 100vh;
+                
                 align-items: flex-start;
                 justify-content: center;
             }
         }
         .skills{
-            height: 100vh;
+            min-height: 100vh;
             h2{
                 margin:0 0 0 1.5em;
                 padding: 0;
