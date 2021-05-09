@@ -509,6 +509,9 @@ footer {
     margin-left: 0;
     width: auto;
   }
+  .content .projects {
+    min-height: 110vh;
+  }
   .content .projects h2 {
     margin: 0 0 0 1.5em;
     padding: 0;
@@ -519,7 +522,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 100vh;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -528,7 +530,7 @@ footer {
             justify-content: center;
   }
   .content .skills {
-    height: 100vh;
+    min-height: 100vh;
   }
   .content .skills h2 {
     margin: 0 0 0 1.5em;
