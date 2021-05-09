@@ -48,9 +48,8 @@ body{
 h2{
     font-weight: bolder;
     font-size: 5em;
-    color: #48E5C2;
-    padding: 10px;
     margin: 0;
+    padding: 10px;
     max-width: 100%;
 }
 
@@ -180,9 +179,7 @@ nav{
 .content{
     position: relative;
     width: 100%;
-   height: 300vh;
-    .skills{
-        height: 100vh;
+    .projects{
         background: url(../res/wave.svg);
         background-color: #3066BE;
         background-repeat: no-repeat;
@@ -190,8 +187,83 @@ nav{
         background-position: center top;
         h2{
             margin:0; 
+            word-wrap: break-word;
+            color: #48E5C2;
+            
+        }
+        .cardContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 1em;
+            .card{
+                background-color: #255096;
+                margin: 1em;
+                border-radius: 15px;
+                width: calc(250px + 2em);
+                transition: all 0.5s ease-in-out;
+                overflow: hidden;
+                img{
+                    width: 250px;
+                    margin: 1em;
+                    border-radius: 15px;
+                    filter: drop-shadow(13px 19px 8px rgba(0,0,0,0.1));
+                    transition: all 0.2s ease-in-out;
+                }
+                p{
+                    text-align: center;
+                    margin: 2em 1em 2em 1em;
+                    color: #FCFAF9;
+                    font-size: large;
+                    font-weight: bold;
+                }
+                .hover-show{
+                    word-wrap: break-word;
+                    height: 0;
+                    opacity: 0;
+                    padding:0;
+                    margin: 0;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            .card:hover, .card:focus{
+                img{
+                    width: calc(250px + 2em);
+                    margin:0;
+                }
+                .hover-show{
+                    height: auto;
+                    opacity: 1;
+                    margin: 0 1em 2em 1em;
+                }
+            }
         }
     }
+    .skills{
+        position: relative;
+        width: 100%;
+        background-color: #48E5C2;
+        scroll-snap-align: start;
+        h2{
+            color: #FCFAF9;
+            margin:0; 
+            word-wrap: break-word;
+
+        }
+        .icon-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            img{
+                height: 150px;
+                width: 150px;
+            }
+        }
+        
+    }
+    
 }
 .hideNav{
     transform: translateY(3.3em);
@@ -350,10 +422,35 @@ footer{
         }
     }
     .content{
-        .skills{
+        .projects{
+
             h2{
                 margin:0 0 0 1.5em;
                 padding: 0;
+            }
+            .cardContainer{
+                margin-top: 10%;
+                flex-direction: row;
+                height: 100vh;
+                align-items: flex-start;
+                justify-content: center;
+            }
+        }
+        .skills{
+            height: 100vh;
+            h2{
+                margin:0 0 0 1.5em;
+                padding: 0;
+            }
+            .icon-container{
+                width: 90%;
+                margin: 10% auto auto auto;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                img{
+                    margin: 2em;
+                }
             }
         }
     }
