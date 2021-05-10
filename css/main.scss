@@ -231,6 +231,7 @@ nav{
                 img{
                     width: calc(250px + 2em);
                     margin:0;
+                    border-radius: 15px 15px 0 0;
                 }
                 .hover-show{
                     height: auto;
@@ -297,16 +298,34 @@ nav{
 }
 footer{
     display: block;
-    height: 7em;
     background-color: #3066BE;
     margin: 0;
-    padding: 0;
+    padding: 0 0 2em 0;
     width: 100%;
     //bottom: 0;
     background-repeat: repeat-x;
     scroll-snap-align: end;
     background-image: url(../res/border_triangles.svg);
-    //background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzAnIGhlaWdodD0nMzAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycgIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz4KCTxsaW5lYXJHcmFkaWVudCBpZD0nZzEnIHgxPScwJScgeTE9JzAlJyB4Mj0nMTAwJScgeTI9JzAlJz4KCQk8c3RvcCBvZmZzZXQ9JzAlJyBzdHlsZT0nc3RvcC1jb2xvcjojYWVjY2FlO3N0b3Atb3BhY2l0eToxJyAvPgoJCTxzdG9wIG9mZnNldD0nMTAwJScgc3R5bGU9J3N0b3AtY29sb3I6I2MxZTZjODtzdG9wLW9wYWNpdHk6MCcgLz4KCTwvbGluZWFyR3JhZGllbnQ+Cgk8bGluZWFyR3JhZGllbnQgaWQ9J2cyJyB4MT0nMCUnIHkxPScwJScgeDI9JzAlJyB5Mj0nMTAwJSc+CgkJPHN0b3Agb2Zmc2V0PScwJScgc3R5bGU9J3N0b3AtY29sb3I6I2FlY2NhZTtzdG9wLW9wYWNpdHk6MScgLz4KCQk8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiNjMWU2Yzg7c3RvcC1vcGFjaXR5OjAnIC8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPHJhZGlhbEdyYWRpZW50IGlkPSdnMycgY3g9JzAlJyBjeT0nMCUnIHI9JzEwMCUnPgoJCTxzdG9wIG9mZnNldD0nMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiNhZWNjYWU7c3RvcC1vcGFjaXR5OjEnIC8+CgkJPHN0b3Agb2Zmc2V0PScxMDAlJyBzdHlsZT0nc3RvcC1jb2xvcjojYzFlNmM4O3N0b3Atb3BhY2l0eTowJyAvPgoJPC9yYWRpYWxHcmFkaWVudD4KCTxnIHRyYW5zZm9ybT0ncm90YXRlKDQ1KSB0cmFuc2xhdGUoMjEuMiAtNDkuNSknPgoJCTxyZWN0IHg9Jy01MCUnIHk9Jy01MCUnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyNmZmYnIC8+CgkJPHJlY3QgeD0nNTAlJyB5PSctNTAlJyB3aWR0aD0nMTAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9J3VybCgjZzEpJyAvPgoJCTxyZWN0IHg9Jy01MCUnIHk9JzUwJScgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAlJyBmaWxsPSd1cmwoI2cyKScgLz4KCQk8cmVjdCB4PSc1MCUnIHk9JzUwJScgd2lkdGg9JzEwJScgaGVpZ2h0PScxMCUnIGZpbGw9J3VybCgjZzMpJyAvPgoJPC9nPgo8L3N2Zz4=);
+    p{
+        color: #48E5C2;
+        font-size: 1.5em;
+        font-weight: bolder;
+        padding: 1em 1em 0.1em 1em;
+        margin: 0;
+    }
+    .social-icons{
+        display: flex;
+        width: 7em;
+        margin: 0.4em 0 0 1.4em;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        a{
+            img{
+                width: 25px;
+            }
+        }
+    }
 }
 @media only screen and (min-width:1080px) {
     h2{
@@ -439,6 +458,7 @@ footer{
         }
         .skills{
             min-height: 100vh;
+            padding-bottom: 10%;
             h2{
                 margin:0 0 0 1.5em;
                 padding: 0;
