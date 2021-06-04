@@ -310,6 +310,9 @@ nav ul li {
   position: relative;
   width: 100%;
   background-color: #48E5C2;
+  background-image: url(../res/layered-steps-haikei.svg);
+  background-repeat: repeat-x;
+  background-size: 103%;
   scroll-snap-align: start;
 }
 
