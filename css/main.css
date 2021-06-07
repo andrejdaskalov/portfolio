@@ -326,21 +326,23 @@ nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .content .skills .icon-container img {
-  height: 150px;
-  width: 150px;
-  margin: 2em 0;
+  height: 70px;
+  width: 70px;
+  margin: 2em 1em;
 }
 
 .hideNav {
@@ -381,7 +383,7 @@ nav ul li {
 
 footer {
   display: block;
-  background-color: #3066BE;
+  background-color: #1d488d;
   margin: 0;
   padding: 0 0 2em 0;
   width: 100%;
@@ -575,18 +577,14 @@ footer .social-icons a img {
   .content .skills .icon-container {
     width: 90%;
     margin: 10% auto auto auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .content .skills .icon-container img {
     margin: 2em;
+    height: 150px;
+    width: 150px;
   }
   .toUp {
     bottom: 2em;
