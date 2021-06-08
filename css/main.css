@@ -340,9 +340,8 @@ nav ul li {
 }
 
 .content .skills .icon-container img {
-  height: 70px;
-  width: 70px;
-  margin: 2em 1em;
+  width: 20%;
+  margin: 2em 5%;
 }
 
 .hideNav {
