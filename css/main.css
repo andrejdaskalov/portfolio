@@ -61,9 +61,17 @@ body .snap {
 h2 {
   font-weight: bolder;
   font-size: 5em;
-  margin: 0;
-  padding: 10px;
+  margin: 10px 0 0 0;
+  padding: 0 10px;
   max-width: 100%;
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: small;
+  padding: 0 15px;
+  margin: 0;
+  letter-spacing: 0.5em;
 }
 
 .pattern {
@@ -238,6 +246,10 @@ nav ul li {
   color: #48E5C2;
 }
 
+.content .projects h3 {
+  color: #37c4a5;
+}
+
 .content .projects .cardContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,6 +332,10 @@ nav ul li {
   color: #FCFAF9;
   margin: 0;
   word-wrap: break-word;
+}
+
+.content .skills h3 {
+  color: #FCFAF9;
 }
 
 .content .skills .icon-container {
@@ -425,6 +441,14 @@ footer .social-icons a img {
   h2 {
     font-size: 7em;
     padding: 2em;
+  }
+  h3 {
+    font-weight: bolder;
+    font-size: small;
+    padding: 0 10px;
+    margin: 0 0 0 12.6em;
+    letter-spacing: 1em;
+    color: #37c4a5;
   }
   .pattern .img {
     margin-left: 30%;
