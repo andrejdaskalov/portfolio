@@ -93,6 +93,8 @@ h3{
     justify-content:center;
     align-items: center;
     scroll-snap-align: start;
+    z-index: 999;
+    position: relative;
 
     .item{
         margin: 0.7em;
@@ -251,6 +253,7 @@ nav{
                     margin: 0 1em 2em 1em;
                 }
             }
+            
         }
     }
     .skills{
@@ -345,6 +348,74 @@ footer{
                 width: 25px;
             }
         }
+    }
+}
+.container-about{
+    width: 100%;
+    // height: 100vh;
+    background: url(../res/IO-Green.svg);
+    margin-top: -5em;
+    padding-bottom: 10em;
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 1em;
+        align-items:center;
+        .card{
+            background-color: #37c4a5;
+            margin: 1em;
+            border-radius: 15px;
+            width: 17em;
+            h4{
+                color: #FCFAF9;
+                font-weight: bolder;
+                font-size: 2em;
+                display: block;
+                margin: -0.7em auto 0 auto;
+                width: fit-content;
+            }
+            p{
+                margin: 2em;
+                line-height: 1.5em;
+                color: #07352a;
+                a{
+                    color: #1d488d;
+                    text-decoration: none;
+                }
+                
+            }
+            .social-links{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0 1.5em 1em 1.5em;
+                height: 100px;
+
+                a{
+                    display: flex;
+                    text-decoration: none;
+                    color: #1d488d;
+                    margin: 0 1em;
+                    img{
+                        width: 25px;
+                        margin: -0.1em 0.5em 0 0;
+                        color: #1d488d;
+                    }
+                    span{
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+    .wave-div{
+        content: '';
+        width: 100%;
+        height: 14em;
+        background: url(../res/wave.svg) no-repeat;
+        transform: scaleX(-1);
     }
 }
 @media only screen and (min-width:1080px) {
@@ -443,7 +514,10 @@ footer{
             }
             .current{
                 color: #48E5C2;
-                &:hover,&:focus{
+                &:hover{
+                    color: #37c4a5;
+                }
+                &:focus{
                     color: #37c4a5;
                     outline:2px dashed #37c4a5;
                 }
@@ -507,5 +581,13 @@ footer{
         bottom: 2em;
         right: 2em;
         border:none
+    }
+    .container-about{
+        .cardContainer{
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 10em; 
+            align-items: stretch;
+        }
     }
 }

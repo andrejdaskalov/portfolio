@@ -24,7 +24,7 @@
             
             <li><a class="current" id="home" href="#">Home</a></li>
             <li><a href="#" id="work">My work</a></li>
-            <li><a href="#" id="about">About</a></li>
+            <li><a href="about.html" id="about">About</a></li>
 
         </ul>
     </nav>
@@ -37,9 +37,9 @@
             <h2>Projects</h2>
             <h3>THINGS I'VE WORKED ON</h3>
             <div class="cardContainer">
-                <div class="card">
+                <div class="card" id="a1card">
                     <!-- <img src="res/thumb1.png" alt="thumbnail"> -->
-                    <img src="res/akva1.gif" alt="First website thumbnail">
+                    <img src="res/thumb.png" id="a1" alt="First website thumbnail">
                     <p>Company site design #1</p>
                     <p class="hover-show"> 
                         The first design I did for the company Akva-Ing. <br>
@@ -104,10 +104,12 @@
         
         var home = document.getElementById("home");
         var work = document.getElementById("work");
-        var home = document.getElementById("about");
         var line = document.getElementById("line");
         var upBtn=document.getElementById("upBtn");
         var navBar = document.getElementById("nav");
+
+        var a1=document.getElementById("a1");
+        var a1card=document.getElementById("a1card");
 //////////////////up button listener////////////////////
         upBtn.addEventListener("click",function(){
             window.scroll({
@@ -180,6 +182,9 @@ document.addEventListener("scroll",function(){
         })
 
 ////////////////////////////////
+        a1card.addEventListener("onmouseover",function(event){
+            a1.src='res/akva1.gif';
+        })
 
     </script>
 </body>

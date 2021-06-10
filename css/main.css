@@ -118,6 +118,8 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   scroll-snap-align: start;
+  z-index: 999;
+  position: relative;
 }
 
 .header .item {
@@ -437,6 +439,102 @@ footer .social-icons a img {
   width: 25px;
 }
 
+.container-about {
+  width: 100%;
+  background: url(../res/IO-Green.svg);
+  margin-top: -5em;
+  padding-bottom: 10em;
+}
+
+.container-about .cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1em;
+  align-items: center;
+}
+
+.container-about .cardContainer .card {
+  background-color: #37c4a5;
+  margin: 1em;
+  border-radius: 15px;
+  width: 17em;
+}
+
+.container-about .cardContainer .card h4 {
+  color: #FCFAF9;
+  font-weight: bolder;
+  font-size: 2em;
+  display: block;
+  margin: -0.7em auto 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.container-about .cardContainer .card p {
+  margin: 2em;
+  line-height: 1.5em;
+  color: #07352a;
+}
+
+.container-about .cardContainer .card p a {
+  color: #1d488d;
+  text-decoration: none;
+}
+
+.container-about .cardContainer .card .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1.5em 1em 1.5em;
+  height: 100px;
+}
+
+.container-about .cardContainer .card .social-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #1d488d;
+  margin: 0 1em;
+}
+
+.container-about .cardContainer .card .social-links a img {
+  width: 25px;
+  margin: -0.1em 0.5em 0 0;
+  color: #1d488d;
+}
+
+.container-about .cardContainer .card .social-links a span {
+  font-size: 1.1em;
+}
+
+.container-about .wave-div {
+  content: '';
+  width: 100%;
+  height: 14em;
+  background: url(../res/wave.svg) no-repeat;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 @media only screen and (min-width: 1080px) {
   h2 {
     font-size: 7em;
@@ -547,7 +645,10 @@ footer .social-icons a img {
   nav ul .current {
     color: #48E5C2;
   }
-  nav ul .current:hover, nav ul .current:focus {
+  nav ul .current:hover {
+    color: #37c4a5;
+  }
+  nav ul .current:focus {
     color: #37c4a5;
     outline: 2px dashed #37c4a5;
   }
@@ -613,6 +714,18 @@ footer .social-icons a img {
     bottom: 2em;
     right: 2em;
     border: none;
+  }
+  .container-about .cardContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 10em;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
 }
 /*# sourceMappingURL=main.css.map */
