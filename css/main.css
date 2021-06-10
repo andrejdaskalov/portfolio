@@ -446,6 +446,21 @@ footer .social-icons a img {
   padding-bottom: 10em;
 }
 
+.container-about h2 {
+  color: #FCFAF9;
+  margin: 0 0.2em;
+  word-wrap: break-word;
+  padding: 0;
+  font-size: 4em;
+}
+
+.container-about h3 {
+  color: #FCFAF9;
+  margin: 0 0 3em 0.25em;
+  letter-spacing: 0.8em;
+  font-size: 0.7em;
+}
+
 .container-about .cardContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -726,6 +741,19 @@ footer .social-icons a img {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+  }
+  .container-about h2 {
+    color: #FCFAF9;
+    margin: 0 0 0 2em;
+    word-wrap: break-word;
+    padding: 0;
+    font-size: 5em;
+  }
+  .container-about h3 {
+    color: #FCFAF9;
+    margin: 0 0 3em 11.8em;
+    font-size: 0.8em;
+    letter-spacing: 0.95em;
   }
 }
 /*# sourceMappingURL=main.css.map */
