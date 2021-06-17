@@ -327,6 +327,7 @@ nav ul li {
   background-image: url(../res/layered-steps-haikei.svg);
   background-repeat: repeat-x;
   background-size: 103%;
+  background-position-y: -5px;
   scroll-snap-align: start;
 }
 
