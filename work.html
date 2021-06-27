@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>My Work - Andrej Daskalov's Portfolio</title>
+</head>
+<body>
+    <div class="header snap">
+        <img class="item" src="res/profilePic.jpg" alt="profile Picture">
+        <p class="nameTag item">Andrej Daskalov</p>
+    </div>
+    <nav id="nav">
+        <span class="line" id="line"></span>
+        <ul>
+            
+            <li><a id="home" href="index.html">Home</a></li>
+            <li><a href="work.html" class="current" id="work">My work</a></li>
+            <li><a href="about.html" id="about">About</a></li>
+
+        </ul>
+    </nav>
+    <div class="container-work">
+        <div class="wave-div"></div>
+        <h2>My work so far</h2>
+        <h3>WITH MUCH MORE ON THE WAY</h3>
+        <div class="cardContainer" >
+            <div class="card">
+                <h4>AKVA-ING WEBSITE</h4>
+                <div class="imageStack" id="stack">
+                    <img src="res/thumb1.png" class="rotate3" alt="image">
+                    <img src="res/thumb1.png" class="rotate2" alt="image">
+                    <img src="res/thumb1.png" class="rotate1" alt="image">
+                    <img src="res/thumb1.png" alt="image">
+                </div>
+                <p> The first design I did for the company Akva-Ing. <br>
+                    Features a glassmorphism motif and intuitive design. <br>
+                </p>
+                <div class="features">
+                    <div class="item">
+                        <h5>Features:</h5>
+                        <ul>
+                            <li>Glassmorphism</li>
+                            <li>One-page design</li>
+                            <li>left pane navigation</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h5>Tecnologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>Sass/CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="visit"><a href="#"> <img src="res/github.svg" alt="github"><span> Visit on GitHub</span></a></button>
+                <button class="close" id="close1"><img src="res/close_white_24dp.svg" alt="close button"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <button class="toUp" id="upBtn"><img src="res/arrow.svg" alt="scroll to top"></button>
+    <footer>
+        <p>Let's stay in touch!</p>
+        <div class="social-icons">
+            <a href="https://github.com/andrejdaskalov"><img src="res/github.svg" alt="Github link"></a>
+            <a href="https://www.instagram.com/a_daskalov/"><img src="res/instagram.svg" alt="Instagram link"></a>
+            <a href="https://twitter.com/ADaskalov"><img src="res/twitter.svg" alt="Twitter link"></a>
+        </div>
+    </footer>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        
+        var home = document.getElementById("home");
+        var work = document.getElementById("work");
+        var line = document.getElementById("line");
+        var upBtn=document.getElementById("upBtn");
+        var navBar = document.getElementById("nav");
+
+        var stack=document.getElementById("stack");
+        var overlay=document.getElementById("overlay");
+        var close1=document.getElementById("close1");
+
+//////////////////up button listener////////////////////
+        upBtn.addEventListener("click",function(){
+            window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+            });
+        })
+
+///////////////image show/////////////////////////////
+    stack.addEventListener("click",function(event){
+        // overlay.style.display="block";
+        overlay.style.height="100vh";
+    
+        overlay.style.opacity=1;
+        // var rect = stack.getBoundingClientRect();
+        setTimeout(function() {
+            stack.classList.add("expandedImgStack");
+            stack.classList.add("heightAuto");
+         }, 500);
+         close1.style.display="block";
+    })
+    close1.addEventListener("click",function(event){
+        // overlay.style.display="block";
+        overlay.style.opacity=0;
+        overlay.style.height="0";
+    
+        // var rect = stack.getBoundingClientRect();
+        setTimeout(function() {
+            stack.classList.remove("expandedImgStack");
+            stack.classList.remove("heightAuto");
+         }, 500);
+         close1.style.display="none";
+    })
+    
+/////////////////////////////////////////////
+////////////////hide and show navbar mobile /////////////////////
+var lastScroll=0;
+function showNav(){
+    // console.log("show");
+    navBar.classList.remove("hideNav");
+}
+function hideNav(){
+    // console.log("hide");
+    navBar.classList.add("hideNav");
+}
+function upUp(){
+    upBtn.classList.remove("lowerUp");
+}
+function downUp(){
+    upBtn.classList.add("lowerUp");
+}
+upBtn.classList.add("hidden");
+document.addEventListener("scroll",function(){
+    if (window.innerWidth < 1080){
+        if (window.scrollY>lastScroll) {
+            hideNav();
+            downUp();
+        } else {
+            showNav();
+            upUp();
+        }
+        lastScroll=window.scrollY;
+    }
+    if(window.scrollY<50){
+        upBtn.classList.add("hidden");
+    }else{
+        upBtn.classList.remove("hidden");
+    }
+});
+
+/////////NAV BUTTONS DESKTOP LINE ANIMATION EVENT LISTENERS////////////////////
+        line.classList.add("currentLine");
+        line.classList.add("lineToWork");
+
+        home.addEventListener("mouseover",function(event){
+            line.classList.add("lineToHome");
+            line.classList.remove("lineToWork");
+            line.classList.remove("currentLine");
+        })
+        home.addEventListener("mouseout",function(event){
+            line.classList.remove("lineToHome");
+            line.classList.add("lineToWork");
+            line.classList.add("currentLine");
+        })
+        
+        // work.addEventListener("mouseover",function(event){
+        //     line.classList.add("lineToWork");
+        //     line.classList.remove("lineToAbout");
+        //     line.classList.remove("currentLine");
+        // })
+        // work.addEventListener("mouseout",function(event){
+        //     line.classList.remove("lineToWork");
+        //     line.classList.add("lineToAbout");
+        //     line.classList.add("currentLine");
+        // })
+        about.addEventListener("mouseover",function(event){
+                line.classList.add("lineToAbout");
+                line.classList.remove("lineToWork");
+                line.classList.remove("currentLine");
+        })
+        about.addEventListener("mouseout",function(event){
+            line.classList.remove("lineToAbout");
+            line.classList.add("lineToWork");
+            line.classList.add("currentLine");
+        })
+
+////////////////////////////////
+       
+
+    </script>
+</body>
+</html>

@@ -551,6 +551,233 @@ footer .social-icons a img {
           transform: scaleX(-1);
 }
 
+.container-work {
+  width: 100%;
+  background: url(../res/IO-Blue.svg);
+  margin-top: -5em;
+  padding-bottom: 10em;
+}
+
+.container-work .wave-div {
+  content: '';
+  width: 100%;
+  height: 14em;
+  background: url(../res/wave.svg) no-repeat;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.container-work h2 {
+  color: #FCFAF9;
+  margin: 0 0.2em;
+  word-wrap: break-word;
+  padding: 0;
+  font-size: 3em;
+}
+
+.container-work h3 {
+  color: #FCFAF9;
+  margin: 0 0 3em 1.3em;
+  padding: 0;
+  letter-spacing: 0.75em;
+  font-size: 0.6em;
+}
+
+.container-work .cardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1em;
+  align-items: center;
+}
+
+.container-work .cardContainer .card {
+  background-color: #275BAF;
+  margin: 1em;
+  border-radius: 15px;
+  width: 90%;
+}
+
+.container-work .cardContainer .card h4 {
+  color: #FCFAF9;
+  font-weight: bolder;
+  font-size: 1.5em;
+  display: block;
+  margin: 0 auto 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.container-work .cardContainer .card .imageStack {
+  width: 100%;
+  position: relative;
+  height: 200px;
+  -webkit-transition: all ease-in-out 500ms;
+  transition: all ease-in-out 500ms;
+}
+
+.container-work .cardContainer .card .imageStack img {
+  position: absolute;
+  width: 250px;
+  left: 50%;
+  margin-left: -125px;
+  margin-top: 1em;
+  border-radius: 1em;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.container-work .cardContainer .card .imageStack .rotate1 {
+  -webkit-transform: translate(-15px, 5px) rotate(-5deg);
+          transform: translate(-15px, 5px) rotate(-5deg);
+}
+
+.container-work .cardContainer .card .imageStack .rotate2 {
+  -webkit-transform: translate(-20px, 7px) rotate(-9deg);
+          transform: translate(-20px, 7px) rotate(-9deg);
+}
+
+.container-work .cardContainer .card .imageStack .rotate3 {
+  -webkit-transform: translate(-25px, 12px) rotate(-13deg);
+          transform: translate(-25px, 12px) rotate(-13deg);
+}
+
+.container-work .cardContainer .card .expandedImgStack {
+  z-index: 10001;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.container-work .cardContainer .card .expandedImgStack img {
+  position: relative;
+}
+
+.container-work .cardContainer .card .expandedImgStack .rotate1, .container-work .cardContainer .card .expandedImgStack .rotate2, .container-work .cardContainer .card .expandedImgStack .rotate3 {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.container-work .cardContainer .card .heightAuto {
+  height: auto;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.container-work .cardContainer .card p {
+  margin: 2em;
+  line-height: 1.5em;
+  color: #d7e7ff;
+}
+
+.container-work .cardContainer .card .features {
+  margin: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #d7e7ff;
+}
+
+.container-work .cardContainer .card .features .item {
+  width: 100%;
+}
+
+.container-work .cardContainer .card .features .item h5 {
+  font-size: large;
+}
+
+.container-work .cardContainer .card .features .item li {
+  list-style-type: circle;
+}
+
+.container-work .cardContainer .card .visit {
+  padding: 7px;
+  line-height: 30px;
+  background: #FCFAF9;
+  border: #FCFAF9;
+  border-radius: 5em;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 20px;
+}
+
+.container-work .cardContainer .card .visit img {
+  display: inline-block;
+  width: 25px;
+  vertical-align: middle;
+  margin: 0 0 3px;
+}
+
+.container-work .cardContainer .card .visit span {
+  display: inline-block;
+  color: #255096;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+.close {
+  position: fixed;
+  bottom: 1em;
+  left: 50%;
+  width: 55px;
+  height: 55px;
+  margin-left: -27.5px;
+  z-index: 100002;
+  display: none;
+  background: #5E5E5E;
+  border: #5E5E5E;
+  border-radius: 2em;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.close img {
+  width: 25px;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 0;
+  background: #FCFAF9;
+  height: 0;
+  opacity: 0;
+  z-index: 10000;
+  -webkit-transition: opacity ease-in-out 0.5s;
+  transition: opacity ease-in-out 0.5s;
+}
+
 @media only screen and (min-width: 1080px) {
   h2 {
     font-size: 7em;
@@ -755,6 +982,76 @@ footer .social-icons a img {
     margin: 0 0 3em 11.8em;
     font-size: 0.8em;
     letter-spacing: 0.95em;
+  }
+  .container-work h2 {
+    font-size: 5em;
+    padding-left: 2em;
+  }
+  .container-work h3 {
+    margin: 0 0 3em 12.3em;
+    padding: 0;
+    font-size: 0.9em;
+    letter-spacing: 0.9em;
+  }
+  .container-work .cardContainer {
+    margin-top: 10em;
+  }
+  .container-work .cardContainer .card {
+    width: 60%;
+  }
+  .container-work .cardContainer .card h4 {
+    margin: -0.7em auto 0 65%;
+  }
+  .container-work .cardContainer .card .imageStack {
+    margin: -10em 0 0 1em;
+    width: 400px;
+  }
+  .container-work .cardContainer .card .imageStack img {
+    width: 300px;
+  }
+  .container-work .cardContainer .card .expandedImgStack {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 0;
+    left: 50%;
+    width: 60%;
+    -webkit-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+    margin: 5em auto auto -30%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container-work .cardContainer .card .expandedImgStack img {
+    position: relative;
+    left: 0;
+    margin: 0.5em;
+    width: 400px;
+  }
+  .container-work .cardContainer .card .expandedImgStack .rotate1, .container-work .cardContainer .card .expandedImgStack .rotate2, .container-work .cardContainer .card .expandedImgStack .rotate3 {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .container-work .cardContainer .card p {
+    margin: 4em 0 0 0;
+    text-align: center;
+    font-size: large;
+  }
+  .container-work .cardContainer .card .features {
+    font-size: large;
+    margin: 1em 0 0 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container-work .cardContainer .card .features .item {
+    width: 10em;
   }
 }
 /*# sourceMappingURL=main.css.map */
