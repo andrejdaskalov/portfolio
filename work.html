@@ -8,7 +8,7 @@
     <title>My Work - Andrej Daskalov's Portfolio</title>
 </head>
 <body>
-    <div class="header snap">
+    <div class="header">
         <img class="item" src="res/profilePic.jpg" alt="profile Picture">
         <p class="nameTag item">Andrej Daskalov</p>
     </div>
@@ -31,9 +31,9 @@
                 <h4>AKVA-ING WEBSITE</h4>
                 <div class="imageStack" id="stack">
                     <img src="res/thumb1.png" class="rotate3" alt="image">
-                    <img src="res/thumb1.png" class="rotate2" alt="image">
-                    <img src="res/thumb1.png" class="rotate1" alt="image">
-                    <img src="res/thumb1.png" alt="image">
+                    <img src="res/a-3.jpg" class="rotate2" alt="image">
+                    <img src="res/a-2.jpg" class="rotate1" alt="image">
+                    <img src="res/a-1.jpg" alt="image">
                 </div>
                 <p> The first design I did for the company Akva-Ing. <br>
                     Features a glassmorphism motif and intuitive design. <br>
@@ -44,7 +44,8 @@
                         <ul>
                             <li>Glassmorphism</li>
                             <li>One-page design</li>
-                            <li>left pane navigation</li>
+                            <li>Left pane navigation</li>
+                            <li>Responsive</li>
                         </ul>
                     </div>
                     <div class="item">
@@ -56,15 +57,114 @@
                         </ul>
                     </div>
                 </div>
-                <button class="visit"><a href="#"> <img src="res/github.svg" alt="github"><span> Visit on GitHub</span></a></button>
+                <button class="visit"><a href="https://andrejdaskalov.github.io/akvaing-glassmorph/" target="_blank"> <img src="res/github.svg" alt="github"><span> Visit on GitHub</span></a></button>
                 <button class="close" id="close1"><img src="res/close_white_24dp.svg" alt="close button"></button>
             </div>
+            <div class="card">
+                <h4>AKVA-ING WEBSITE 2.0</h4>
+                <div class="imageStack" id="stack2">
+                    <img src="res/akva2.gif" class="rotate1" alt="image">
+                    <img src="res/a2-1.jpg" alt="image">
+                </div>
+                <p> The current design for the upcoming Akva-Ing website redesign. <br>
+                    Features a simplified design, pleasant color scheme and stunning 3D elements.  <br>
+                    Coming soon!
+                </p>
+                <div class="features">
+                    <div class="item">
+                        <h5>Features:</h5>
+                        <ul>
+                            <li>Minimalism</li>
+                            <li>Interactive 3D</li>
+                            <li>Responsive</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h5>Tecnologies:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>Sass/CSS</li>
+                            <li>JavaScript</li>
+                            <li>GSAP</li>
+                            <li>ThreeJS</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="visit"><a href="https://xd.adobe.com/view/bb89f8f1-110b-4b76-b5f3-71fd8c93b635-eeda/screen/071a485f-3f0f-4b6d-81fa-5a0595cb828d?fullscreen&hints=off" target="_blank"> <span>Visit on XD</span></a></button>
+                <button class="close" id="close2"><img src="res/close_white_24dp.svg" alt="close button"></button>
+            </div>
+
+            <div class="card">
+                <h4>CALCULATOR</h4>
+                <div class="imageStack" id="stack3">
+                    <img src="res/calculator.gif" class="rotate3" alt="image">
+                    <img src="res/c3.jpg" class="rotate2" alt="image">
+                    <img src="res/c2.jpg" class="rotate1" alt="image">
+                    <img src="res/c1.jpg" alt="image">
+                </div>
+                <p> My first Kotlin Android app ever. <br>
+                    A simple calculator with an elegant OLED friendly look.  <br>
+                     <br>
+                </p>
+                <div class="features">
+                    <div class="item">
+                        <h5>Features:</h5>
+                        <ul>
+                            <li>Simple</li>
+                            <li>Addition, substraction, multiplication and division</li>
+                            <li>Dark/Light Mode</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h5>Tecnologies:</h5>
+                        <ul>
+                            <li>Kotlin</li>
+                            <li>Runs on Android</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="close" id="close3"><img src="res/close_white_24dp.svg" alt="close button"></button>
+            </div>
+
+            <div class="card">
+                <h4>PUSH-TO-TALK</h4>
+                <div class="imageStack" id="stack4">
+                    <img src="res/ptt.gif" class="rotate3" alt="image">
+                    <img src="res/d3.jpg" class="rotate2" alt="image">
+                    <img src="res/d2.jpg" class="rotate1" alt="image">
+                    <img src="res/d1.jpg" alt="image">
+                </div>
+                <p> My second venture into the world of Android. <br>
+                    A secure, minimal dialer app with unique push-to-talk over GSM functionality. <br>
+                </p>
+                <div class="features">
+                    <div class="item">
+                        <h5>Features:</h5>
+                        <ul>
+                            <li>Push to talk</li>
+                            <li>Works over GSM from mobile carriers</li>
+                            <li>Requires no data connection</li>
+                            <li>Secure</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h5>Tecnologies:</h5>
+                        <ul>
+                            <li>Kotlin</li>
+                            <li>Runs on Android</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="close" id="close4"><img src="res/close_white_24dp.svg" alt="close button"></button>
+            </div>
+
+
         </div>
     </div>
 
 
     <button class="toUp" id="upBtn"><img src="res/arrow.svg" alt="scroll to top"></button>
-    <footer>
+    <footer class="blue">
         <p>Let's stay in touch!</p>
         <div class="social-icons">
             <a href="https://github.com/andrejdaskalov"><img src="res/github.svg" alt="Github link"></a>
@@ -84,8 +184,14 @@
         var navBar = document.getElementById("nav");
 
         var stack=document.getElementById("stack");
+        var stack2=document.getElementById("stack2");
+        var stack3=document.getElementById("stack3");
+        var stack4=document.getElementById("stack4");
         var overlay=document.getElementById("overlay");
         var close1=document.getElementById("close1");
+        var close2=document.getElementById("close2");
+        var close3=document.getElementById("close3");
+        var close4=document.getElementById("close4");
 
 //////////////////up button listener////////////////////
         upBtn.addEventListener("click",function(){
@@ -121,6 +227,84 @@
          }, 500);
          close1.style.display="none";
     })
+
+    
+    stack2.addEventListener("click",function(event){
+        // overlay.style.display="block";
+        overlay.style.height="100vh";
+    
+        overlay.style.opacity=1;
+        // var rect = stack.getBoundingClientRect();
+        setTimeout(function() {
+            stack2.classList.add("expandedImgStack");
+            stack2.classList.add("heightAuto");
+         }, 500);
+         close2.style.display="block";
+    })
+    close2.addEventListener("click",function(event){
+        // overlay.style.display="block";
+        overlay.style.opacity=0;
+        overlay.style.height="0";
+    
+        // var rect = stack.getBoundingClientRect();
+        setTimeout(function() {
+            stack2.classList.remove("expandedImgStack");
+            stack2.classList.remove("heightAuto");
+         }, 500);
+         close2.style.display="none";
+    })
+
+    stack3.addEventListener("click",function(event){
+        // overlay.style.display="block";
+        overlay.style.height="100vh";
+    
+        overlay.style.opacity=1;
+        // var rect = stack.getBoundingClientRect();
+        setTimeout(function() {
+            stack3.classList.add("expandedImgStack");
+            stack3.classList.add("heightAuto");
+         }, 500);
+         close3.style.display="block";
+    })
+    close3.addEventListener("click",function(event){
+        // overlay.style.display="block";
+        overlay.style.opacity=0;
+        overlay.style.height="0";
+    
+        // var rect = stack.getBoundingClientRect();
+        setTimeout(function() {
+            stack3.classList.remove("expandedImgStack");
+            stack3.classList.remove("heightAuto");
+         }, 500);
+         close3.style.display="none";
+    })
+
+    stack4.addEventListener("click",function(event){
+        // overlay.style.display="block";
+        overlay.style.height="100vh";
+    
+        overlay.style.opacity=1;
+        // var rect = stack.getBoundingClientRect();
+        setTimeout(function() {
+            stack4.classList.add("expandedImgStack");
+            stack4.classList.add("heightAuto");
+         }, 500);
+         close4.style.display="block";
+    })
+    close4.addEventListener("click",function(event){
+        // overlay.style.display="block";
+        overlay.style.opacity=0;
+        overlay.style.height="0";
+    
+        // var rect = stack.getBoundingClientRect();
+        setTimeout(function() {
+            stack4.classList.remove("expandedImgStack");
+            stack4.classList.remove("heightAuto");
+         }, 500);
+         close4.style.display="none";
+    })
+
+
     
 /////////////////////////////////////////////
 ////////////////hide and show navbar mobile /////////////////////
