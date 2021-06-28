@@ -543,6 +543,8 @@ footer.blue{
                 left: 0;
                 width: 100%;
                 transition: all ease-in-out 0.5s;
+                position: fixed;
+
                 img{
                     position: relative;
                     
@@ -860,7 +862,6 @@ footer.blue{
                     margin: 5em auto auto -30%;
                     justify-content: space-around;
                     flex-wrap: wrap;
-                    position: fixed;
                     img{
                         position: relative;
                         left: 0;

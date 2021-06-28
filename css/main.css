@@ -688,6 +688,7 @@ footer.blue {
   width: 100%;
   -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
+  position: fixed;
 }
 
 .container-work .cardContainer .card .expandedImgStack img {
@@ -1045,7 +1046,6 @@ footer.blue {
         justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    position: fixed;
   }
   .container-work .cardContainer .card .expandedImgStack img {
     position: relative;
