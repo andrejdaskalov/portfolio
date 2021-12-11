@@ -149,7 +149,6 @@
         var navBar = document.getElementById("nav");
 
         var stack=document.getElementById("stack");
-        var stack2=document.getElementById("stack2");
         var stack3=document.getElementById("stack3");
         var stack4=document.getElementById("stack4");
         var overlay=document.getElementById("overlay");
@@ -194,30 +193,6 @@
     })
 
     
-    stack2.addEventListener("click",function(event){
-        // overlay.style.display="block";
-        overlay.style.height="100vh";
-    
-        overlay.style.opacity=1;
-        // var rect = stack.getBoundingClientRect();
-        setTimeout(function() {
-            stack2.classList.add("expandedImgStack");
-            stack2.classList.add("heightAuto");
-         }, 500);
-         close2.style.display="block";
-    })
-    close2.addEventListener("click",function(event){
-        // overlay.style.display="block";
-        overlay.style.opacity=0;
-        overlay.style.height="0";
-    
-        // var rect = stack.getBoundingClientRect();
-        setTimeout(function() {
-            stack2.classList.remove("expandedImgStack");
-            stack2.classList.remove("heightAuto");
-         }, 500);
-         close2.style.display="none";
-    })
 
     stack3.addEventListener("click",function(event){
         // overlay.style.display="block";
